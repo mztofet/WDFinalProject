@@ -106,7 +106,65 @@
 
   <section id="houses" class="mb-5">
     <h3 class="h4 mb-3 text-warning">Hogwarts Houses</h3>
-    <!-- Accordion will go here -->
+    <div class="accordion" id="housesAccordion">
+
+  <!-- Gryffindor -->
+  <div class="accordion-item bg-dark text-light border-warning">
+    <h2 class="accordion-header">
+      <button class="accordion-button bg-black text-warning" type="button" data-bs-toggle="collapse" data-bs-target="#gryffindor">
+        Gryffindor
+      </button>
+    </h2>
+    <div id="gryffindor" class="accordion-collapse collapse show" data-bs-parent="#housesAccordion">
+      <div class="accordion-body">
+        Brave, daring, and chivalrous. Home to Harry Potter, Hermione Granger, and Ron Weasley.
+      </div>
+    </div>
+  </div>
+
+  <!-- Slytherin -->
+  <div class="accordion-item bg-dark text-light border-warning">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed bg-black text-success" type="button" data-bs-toggle="collapse" data-bs-target="#slytherin">
+        Slytherin
+      </button>
+    </h2>
+    <div id="slytherin" class="accordion-collapse collapse" data-bs-parent="#housesAccordion">
+      <div class="accordion-body">
+        Ambitious, cunning, and resourceful. Known for producing powerful witches and wizards.
+      </div>
+    </div>
+  </div>
+
+  <!-- Ravenclaw -->
+  <div class="accordion-item bg-dark text-light border-warning">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed bg-black text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#ravenclaw">
+        Ravenclaw
+      </button>
+    </h2>
+    <div id="ravenclaw" class="accordion-collapse collapse" data-bs-parent="#housesAccordion">
+      <div class="accordion-body">
+        Wise, creative, and intelligent. Home to Luna Lovegood and Cho Chang.
+      </div>
+    </div>
+  </div>
+
+  <!-- Hufflepuff -->
+  <div class="accordion-item bg-dark text-light border-warning">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed bg-black text-warning" type="button" data-bs-toggle="collapse" data-bs-target="#hufflepuff">
+        Hufflepuff
+      </button>
+    </h2>
+    <div id="hufflepuff" class="accordion-collapse collapse" data-bs-parent="#housesAccordion">
+      <div class="accordion-body">
+        Loyal, patient, and fair. Known for kindness and hard work.
+      </div>
+    </div>
+  </div>
+
+</div>  
   </section>
 
   <section id="spells" class="mb-5">
