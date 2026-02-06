@@ -169,12 +169,120 @@
 
   <section id="spells" class="mb-5">
     <h3 class="h4 mb-3 text-warning">Spells & Charms</h3>
-    <!-- Tabs + tooltips/popovers will go here -->
+    <!-- Spell Category Tabs -->
+<ul class="nav nav-tabs mb-3" id="spellTabs" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="charms-tab" data-bs-toggle="tab" data-bs-target="#charms" type="button" role="tab">
+      Charms
+    </button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="curses-tab" data-bs-toggle="tab" data-bs-target="#curses" type="button" role="tab">
+      Curses
+    </button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="jinxes-tab" data-bs-toggle="tab" data-bs-target="#jinxes" type="button" role="tab">
+      Jinxes
+    </button>
+  </li>
+</ul>
+
+<div class="tab-content" id="spellTabsContent">
+
+  <!-- Charms -->
+  <div class="tab-pane fade show active" id="charms" role="tabpanel">
+    <p>
+      <span class="text-warning" 
+            data-bs-toggle="popover" 
+            title="Wingardium Leviosa" 
+            data-bs-content="A levitation charm used to make objects fly.">
+        Wingardium Leviosa
+      </span>
+      — A classic first-year charm.
+    </p>
+
+    <p>
+      <span class="text-warning" 
+            data-bs-toggle="popover" 
+            title="Lumos" 
+            data-bs-content="Creates light at the tip of the wand.">
+        Lumos
+      </span>
+      — Lights up your wand.
+    </p>
+  </div>
+
+  <!-- Curses -->
+  <div class="tab-pane fade" id="curses" role="tabpanel">
+    <p>
+      <span class="text-danger" 
+            data-bs-toggle="popover" 
+            title="Expulso" 
+            data-bs-content="A blasting curse that causes an explosion.">
+        Expulso
+      </span>
+      — A powerful offensive spell.
+    </p>
+
+    <p>
+      <span class="text-danger" 
+            data-bs-toggle="popover" 
+            title="Crucio" 
+            data-bs-content="Inflicts unbearable pain. One of the Unforgivable Curses.">
+        Crucio
+      </span>
+      — Extremely dangerous magic.
+    </p>
+  </div>
+
+  <!-- Jinxes -->
+  <div class="tab-pane fade" id="jinxes" role="tabpanel">
+    <p>
+      <span class="text-info" 
+            data-bs-toggle="popover" 
+            title="Tarantallegra" 
+            data-bs-content="Forces the target to dance uncontrollably.">
+        Tarantallegra
+      </span>
+      — A chaotic jinx.
+    </p>
+
+    <p>
+      <span class="text-info" 
+            data-bs-toggle="popover" 
+            title="Steleus" 
+            data-bs-content="Causes uncontrollable sneezing.">
+        Steleus
+      </span>
+      — A mischievous jinx.
+    </p>
+  </div>
+
+</div>
   </section>
 
   <section id="media" class="mb-5">
     <h3 class="h4 mb-3 text-warning">Books vs Movies</h3>
-    <!-- Another component (e.g., Collapse or Dropdown) will go here -->
+    <p class="mb-3">
+  Curious how the books compare to the movies? Click below to reveal a quick comparison.
+</p>
+
+<button class="btn btn-outline-warning mb-3" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#comparisonCollapse">
+  Show Comparison
+</button>
+
+<div class="collapse" id="comparisonCollapse">
+  <div class="card card-body bg-dark text-light border border-warning">
+    <h5 class="text-warning">Books vs Movies</h5>
+    <p>
+      The books offer deeper lore, character development, and world-building, while the movies bring the magic to life visually. Both versions have unique strengths that fans appreciate.
+    </p>
+  </div>
+</div>
   </section>
 </main>
 
